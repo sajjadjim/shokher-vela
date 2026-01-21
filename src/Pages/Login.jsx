@@ -7,7 +7,6 @@ import { AuthContext } from '../Context/AuthProvider';
 
 const Login = () => {
 
-
     const { signIn, googleLogIn } = useContext(AuthContext)
     const [error, setError] = useState(null)
     // console.log(signIn)
@@ -49,7 +48,7 @@ const Login = () => {
             })
     }
     return (
-        <div className='bg-[#F8EDE3]'>
+        <div className='bg-[#0c7d7f]'>
             <Navbar></Navbar>
             <div className='my-30 pb-20'>
                 <div className="card bg-base-100 w-[400px] mx-auto shrink-0 shadow-2xl ">

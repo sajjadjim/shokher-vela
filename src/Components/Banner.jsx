@@ -1,8 +1,8 @@
 import React from 'react';
-import knit from '../assets/knit.jpg'
-import write from '../assets/Write.jpg'
-import paint from '../assets/Paint.jpg'
-import cook from '../assets/cook.jpg'
+import image1 from '../assets/carousel_image/image1.jpg'
+import image2 from '../assets/carousel_image/image2.jpg'
+import image3 from '../assets/carousel_image/image3.jpg'
+import image4 from '../assets/carousel_image/image4.jpg'
 
 const Banner = () => {
     return (
@@ -10,7 +10,7 @@ const Banner = () => {
             <div className="carousel w-full h-[500px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
-                        src={knit}
+                        src={image1}
                         className="w-full h-full object-cover" />
                     <div className="absolute inset-0  flex items-center justify-center">
                         <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-16 px-4 ">
@@ -24,7 +24,7 @@ const Banner = () => {
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
                     <img
-                        src={write}
+                        src={image2}
                         className="w-full h-full object-cover" />
                     <div className="absolute inset-0  flex items-center justify-center">
                         <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-16 px-4">
@@ -38,7 +38,7 @@ const Banner = () => {
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
                     <img
-                        src={paint}
+                        src={image3}
                         className="w-full h-full object-cover" />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-16 px-4">
@@ -52,7 +52,7 @@ const Banner = () => {
                 </div>
                 <div id="slide4" className="carousel-item relative w-full">
                     <img
-                        src={cook}
+                        src={image4}
                         className="w-full h-full object-cover" />
                     <div className="absolute inset-0  flex items-center justify-center">
                         <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-16 px-4">

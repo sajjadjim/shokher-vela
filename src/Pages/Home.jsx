@@ -16,7 +16,6 @@ const Home = () => {
             <Featured></Featured>
             <StatSection></StatSection>
             <Challenges></Challenges>
-
         </div>
     );
 };

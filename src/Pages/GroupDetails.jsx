@@ -16,7 +16,7 @@ const GroupDetails = () => {
     if (!group) return <p>Loading...</p>;
 
     return (
-        <div className='bg-[#F8EDE3]'>
+        <div className='bg-[#15a779]'>
             <Navbar></Navbar>
             <div className="max-w-3xl mx-auto p-6">
                 <img src={group.imageUrl} alt={group.groupName} className="w-full h-64 object-cover rounded" />

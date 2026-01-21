@@ -3,6 +3,10 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router';
 import logo from '../assets/logo.png';
 import { AuthContext } from '../Context/AuthProvider';
+import { FaHome  } from "react-icons/fa";
+import { FaUserGroup } from "react-icons/fa6";
+import { MdContactSupport , MdContacts } from "react-icons/md";
+import { MdOutlineSupportAgent } from "react-icons/md";
 
 
 const Navbar = () => {
@@ -20,7 +24,7 @@ const Navbar = () => {
 
     return (
         <div className="sticky top-0 z-50">
-            <div className="navbar bg-[#DBB5B5] shadow-sm p-6 ">
+            <div className="navbar bg-[#B8DB80] shadow-sm p-6 ">
 
                 <div className="navbar-start">
                     <div className="dropdown text-[#3A0519]">
@@ -46,17 +50,17 @@ const Navbar = () => {
                             )}
                         </ul>
                     </div>
-                    <h2 className="text-[#3A0519] text-xl font-bold ml-2">HobbyHub</h2>
-                    <img className="w-12 h-12 ml-2" src={logo} alt="HobbyHub Logo" />
+                    <h2 className="text-[#3A0519] text-xl font-bold ml-2">Shokhen Vela</h2>
+                    <img className="w-12 h-12 ml-2" src={logo} alt="Shokhen Vela Logo" />
                 </div>
 
 
                 <div className="navbar-center space-x-4 text-[#3A0519] hidden md:flex">
-                    <Link to="/">Home</Link>
-                    <Link to="/allGroups">All Groups</Link>
-                    <Link to="/aboutUs">About us</Link>
-                    <Link to="/contact">Contact</Link>
-                    <Link to="/support">Support</Link>
+                    <Link className='border-gray-500 border-1 px-2 py-1 rounded-sm hover:shadow-md hover:shadow-black hover:border-0 flex  items-center transition-all duration-300 ease-in-out hover:scale-105' to="/"><FaHome className="inline mr-1 " />Home</Link>
+                    <Link className='border-gray-500 border-1 px-2 py-1 rounded-sm hover:shadow-md hover:shadow-black hover:border-0 flex items-center ' to="/allGroups"><FaUserGroup className="inline mr-1" />All Groups</Link>
+                    <Link className='border-gray-500 border-1 px-2 py-1 rounded-sm hover:shadow-md hover:shadow-black hover:border-0 ' to="/aboutUs"><MdContactSupport className="inline mr-1" />About us</Link>
+                    <Link className='border-gray-500 border-1 px-2 py-1 rounded-sm hover:shadow-md hover:shadow-black hover:border-0 flex items-center' to="/contact"><MdContacts className="inline mr-1" />Contact</Link>
+                    <Link className='border-gray-500 border-1 px-2 py-1 rounded-sm hover:shadow-md hover:shadow-black hover:border-0 flex items-center' to="/support"><MdOutlineSupportAgent className="inline mr-1" />Support</Link>
                     {user && (
                         <>
                            <Link to="/dashBoard">DashBoard</Link>
