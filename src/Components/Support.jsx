@@ -3,7 +3,7 @@ import { Mail, HelpCircle, Clock } from 'lucide-react';
 
 const Support = () => {
   return (
-    <section className="bg-[#F8EDE3] py-16 px-6">
+    <section className="bg-secondary-color py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#3A0519] mb-4">Support & Help Center</h2>

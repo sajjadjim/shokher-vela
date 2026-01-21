@@ -6,10 +6,15 @@ import Footer from '../Components/Footer';
 
 const MainLayout = () => {
     return (
-        <div className='bg-[#F8EDE3]'>
+        <div className='bg-secondary-color min-h-screen flex flex-col justify-between'>
             <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
+           {/* 3. flex-grow: This div expands to push the Footer down */}
+            <div className='flex-grow'>
+                <Outlet></Outlet>
+            </div>
+            <div className=''>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };

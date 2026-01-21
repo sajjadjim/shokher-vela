@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/logo.png';
 import { RiFacebookCircleLine } from 'react-icons/ri';
 import { FaInstagram } from 'react-icons/fa';
 import { SlSocialYoutube } from 'react-icons/sl';
@@ -7,14 +6,14 @@ import { Link } from 'react-router';
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center text-[#3A0519] p-10 bg-[#B8DB80]">
+    <footer className="footer footer-horizontal footer-center text-[#3A0519] p-10 bg-brand">
       <aside>
         <div>
-          <img className="w-30 h-30" src={logo} alt="Logo" />
+          <h2 className="text-2xl font-bold">Shokhen Vela</h2>
         </div>
         <div>
           <p className="font-semibold mb-3">Follow us on</p>
-          <div className="grid grid-flow-col gap-4 mb-4">
+          <div className="grid grid-flow-col gap-4 ">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <RiFacebookCircleLine size={26} />
             </a>

@@ -1,4 +1,34 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin "daisyui";
+@tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+/* --- ADD THIS SECTION BELOW --- */
+@layer components {
+  .bg-brand {
+    background-color: #B8DB80 !important; /* The !important forces it to work */
+  }
+  
+  .text-brand {
+    color: #B8DB80 !important;
+  }
+  .bg-secondary-color{
+    background-color: #F7F6D3 !important;
+  }
+}
+
+/* Navbar Link Button  */
+@layer components {
+  /* We create a new class called '.nav-link' */
+  .nav-link {
+    @apply px-2 py-1 rounded-sm flex items-center transition-all duration-300 ease-in-out;
+    @apply hover:shadow-md hover:shadow-black hover:border-0 hover:scale-105;
+  }
+}
+
+@layer components {
+  .btn-card-join {
+    @apply p-4 shadow-lg  bg-[#B8DB80] rounded-xl h-[250px] w-full pt-20 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#fef3f3];
+    @apply hover:-translate-y-2 hover:shadow-2xl hover:bg-[#fef3f3] cursor-pointer;
+  }
+}

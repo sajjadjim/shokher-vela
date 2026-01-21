@@ -1,10 +1,10 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import errorAnimation from '../assets/404.json'
+import errorAnimation from '../assets/404 error.json'
 
 const Error = () => {
     return (
-        <div className='bg-[#F8EDE3] min-h-screen flex justify-center items-center'>
+        <div className='bg-secondary-color min-h-screen flex justify-center items-center'>
             <div className='text-center px-4'>
                 <h2 className='font-bold text-5xl text-[#3A0519]'>404</h2>
                 <h2 className='font-bold text-2xl text-[#3A0519] mt-2'>Page not Found!!</h2>
